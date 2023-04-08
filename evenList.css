@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.list{
+    padding: .5rem;
+    width: 100%;
+    height: 100%;
+    background:transparent;
+}
+.head{
+    width: 100%;
+    height: 100%;
+    background: black;
+    color: grey;
+    text-align: center;
+    /* border-radius: 5px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: orange;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title input{
+    padding: .6rem;
+    outline: none;
+    width: 100%;
+    padding-right: 2rem;
+    page-break-after: auto;
+    border: none;
+    border-bottom: 1px grey solid;
+    /* border: 1px silver solid; */
+    background: transparent;
+}
+input:hover{
+    border: 1px white solid;
+    /* border-radius:  1px; */
+    /* box-shadow: 1px 1px 1px whitesmoke; */
+    border: none;
+    border-bottom: 1px whitesmoke solid;
+    background: transparent;
+}
+input::placeholder{
+    color: grey;
+    text-align: center;
+}
+.btn{
+    padding: .5rem;
+    width: 10%;
+    margin:1rem;
+    outline: none;
+    border: 1px solid gainsboro;
+    border-radius:4px ;
+    color: grey;
+    transition:all 10ms ease-in-out;
+}
+.btn:hover{
+    background: grey;
+    color: white;
+}
+
+.listItems{
+    border: 1px dotted black;
+    padding-left: 1rem;
+    width: 100%;
+    background: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .25rem;
+    transition: all 3ms ease-in-out;
+    color: black;
+    margin-top: .45rem;
+
+}
+.listItems:hover{
+    box-shadow: 1px 1px 1px orangered;
+}
+.remove{
+    cursor: pointer;
+    color: black;
+    border: none;
+    background: transparent;
+    padding-right: 1rem; 
+}
+.removed{
+    animation: move 3s linear alternate 3 ;
+}
+@keyframes move {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(45deg);
+    }
+    
+}
+
+.remove:hover{
+    color: red;
+}
+
+.last{
+    background:white;
+    color: rgb(58, 58, 58);
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background:red;
+    width: 100%;
+    height: 90vh;
+}
